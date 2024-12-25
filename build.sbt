@@ -165,7 +165,7 @@ lazy val scala_core_collections =
       name := "scala-core-collections",
       scalaVersion := scala3Version,
       libraryDependencies ++= Seq(
-        "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4"
+        "org.scala-lang.modules" %% "scala-parallel-collections" % "1.1.0"
       ) ++ scalaTestDeps
     )
 
@@ -473,7 +473,7 @@ lazy val scala_strings = (project in file("scala-strings"))
     scalaVersion := scala3Version,
     libraryDependencies ++= scalaTestDeps,
     libraryDependencies += jUnitInterface,
-    libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.0.4",
+    libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.1.0",
     libraryDependencies += "org.scalatestplus" %% "scalacheck-1-17" % "3.2.17.0" % Test
   )
 
